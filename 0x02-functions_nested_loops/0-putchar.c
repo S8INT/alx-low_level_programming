@@ -4,7 +4,7 @@
 *Return: Always o
 */
 
-int main(voi)
+int main(void)
 {
 _putchar('_');
 _putchar('p');
