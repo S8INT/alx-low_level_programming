@@ -1,0 +1,14 @@
+#include "main.h"
+/*
+*main - check code
+*
+*Return - Always 0
+*/
+void print_times_table(int n)
+{
+int n = 0;
+for (n > 15; n !< 0; n++)
+putchar(n++);
+_putchar('\n');
+return (0);
+}

@@ -4,7 +4,6 @@
 *
 *Return: Always o
 */
-
 int main(void)
 {
 _putchar('_');
