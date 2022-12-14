@@ -8,8 +8,8 @@ int main(void)
 int count;
 unsigned long i, j, k;
 unsigned long m, n, p, carry;
-count = o;
-i = o;
+count = 0;
+i = 0;
 j = 1;
 for (count = 1; count <= 91; count++)
 {
@@ -24,7 +24,7 @@ n = j % 1000;
 j = j / 1000;
 while (count <= 98)
 {
-arry = (m + n) / 1000;
+carry = (m + n) / 1000;
 p = (m + n) -carry * 1000;
 k = (i + j) +carry;
 m = n;
