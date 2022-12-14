@@ -5,12 +5,12 @@
 * 3 or 5 below 1024.
 * Return: Nothing.
 */
-int main(void) 
+int main(void)
 {
-int i, J;
+int i, R;
 for (i = 0; i < 1024; i++)
-if (i % 3 == 0 || i % 5 == 0)     
-J += i;  
-printf("%d\n", res);
-return (0);  
+if (i % 3 == 0 || i % 5 == 0)
+R += i;
+printf("%d\n", R);
+return (0);
 }
