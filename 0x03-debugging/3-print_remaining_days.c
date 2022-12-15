@@ -8,8 +8,9 @@
  * @year: year
  * Return: void
 */
-void print_remaining_days(int month, int day, int year)
+void print_remaining_days(int, int, int )
 {
+int month, day, year;
 if (month >= 3 && day >= 60)
 {
 day++;
