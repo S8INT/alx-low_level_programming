@@ -6,14 +6,18 @@
 void print_square(int size)
 {
 int x, y;
-for (x = 0; x < size; x++)
+y = 0;
+if (size < 1)
+_putchar('\n');
+while (y < size)
 {
-for (y = 0; y < size; y++)
+x = 0;
+while (x < size)
 {
-_putchar(35);
+_putchar('#');
+x++;
 }
-_putchar("\n");
+_putchar('\n');
+y++;
 }
-if (size <= 0)
-_putchar("\n");
 }
