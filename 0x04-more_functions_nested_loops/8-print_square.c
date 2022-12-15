@@ -5,10 +5,10 @@
 */
 void print_square(int size)
 {
-int l1, l2;
-for (l1 = 0; l1 < size; l1++)
+int x, y;
+for (x = 0; x < size; x++)
 {
-for (l2 = 0; l2 < size; l2++)
+for (y = 0; y < size; y++)
 {
 _putchar(35);
 }
