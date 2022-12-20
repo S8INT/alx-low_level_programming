@@ -1,20 +1,16 @@
 #include "main.h"
 /*
- * put2 - prints one character out of a string
- *
- *@str: input string
- *Return: no return
+ * puts2 - Prints out every other char of the string.
+ * @str: input string to print.
 */
-void put2(char *str)
+void puts2(char *str)
 {
-int count = 0;
-while (count >=0){
-if (str[count] == '\0')
-{_putchar('\n');
-break;
+int i;
+while (str[i] != '\0')
+{
+if (i % 2 == 0)
+_putchar(str[i]);
+i++;
 }
-if (count %2 == 0)
-_putchar(str[count]);
-count++;
-}
+_putchar('\n');
 }
