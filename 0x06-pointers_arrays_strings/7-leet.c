@@ -1,15 +1,15 @@
 #include "main.h"
 /*
- * leet - encodes a string into leetspeek.
- * @s: pointer to input string.
- * Return: Returns pointer to leetspeek string.
+ * leet - encodes a string into 1337.
+ * @s: string to encodee.
+ * Return: address of s.
 */
 char *leet(char *s)
 {
 int i, j;
 char a[] = "aAeEoOtTlL";
 char b[] = "4433007711";
-for (i =0; *(s + i); i++)
+for (i = 0; *(s + i); i++)
 {
 for (j = 0; j <= 9; j++)
 {
