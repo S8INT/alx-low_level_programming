@@ -7,7 +7,7 @@
  *
  *Return: Always 0 (success)
  */
-int main(int argc, *argv[])
+int main(int argc, char *argv[])
 {
 (void) arg;
 printf("%s\n", argv[0]);
