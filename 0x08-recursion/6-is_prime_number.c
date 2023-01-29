@@ -6,13 +6,13 @@ int prime_checker(int n, int i);
  * @n: input to check
  * Return: Always 0 (Success)
  */
-int is_prime_number(int n)  
+int is_prime_number(int n)
 {
 if (n <= 1)
 return (0);
 else if (prime_checker(n, n / 2) > 0)
 return (1);
-return (0); 
+return (0);
 }
 /*
  * prime_checker - checks for prime
@@ -21,12 +21,12 @@ return (0);
  * Return: prime check
  */
 
-int prime_checker(int n, int i)  
+int prime_checker(int n, int i)
 {
-if (i == 1)    
+if (i == 1)
 return (1);
 if (n % i == 0)
 return (0);
 else
-return (prime_checker(n, i - 1));  
+return (prime_checker(n, i - 1));
 }
