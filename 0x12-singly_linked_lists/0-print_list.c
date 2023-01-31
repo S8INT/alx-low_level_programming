@@ -13,8 +13,8 @@ size_t print_list(const list_t *h)
 size_t i;
 for (i = 0; h; i++)
 {
-printf("%d\n", h->n);
-h = h->next;
+printf("%d\n", h -> n);
+h = h -> next;
 }
 return (i);
 }
