@@ -1,4 +1,4 @@
-#include "main.h"
+#include "variadic_functions.h"
 /*
  * print_all - prints all
  * @format: param
