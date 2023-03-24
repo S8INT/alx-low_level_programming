@@ -1,4 +1,3 @@
-what to know
-   1. What are variadic functions
-   2.How to use va_start, va_arg and va_end macros
-   3. Why and how to use the const type qualifier
+Write a function that returns the sum of all its parameters.
+Write a function that prints numbers, followed by a new line.
+Write a function that prints strings, followed by a new line.
