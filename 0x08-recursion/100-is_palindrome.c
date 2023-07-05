@@ -14,7 +14,7 @@ return (0);
 return (1 + _strlen_recursion(++s));
 }
 
-/*
+/**
  * p1 - palindrome
  * @s: pointer to string
  * @l: position
@@ -33,7 +33,7 @@ return (p1(s + 1, l - 2));
 }
 return (0);
 }
-/*
+/**
  * is_palindrome - palindrome
  * @s: pointer to string
  * Return: recursion
