@@ -1,2 +1,2 @@
 #!/bin/bash
-ar libmy.a main.o
+ar rcs libmy.a *.o
