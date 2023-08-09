@@ -1,16 +1,36 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#include "main.h"
 
-#include <elf.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <sys/type.h>
-#include <sys/stat
-#include <stdio.h>
-#include <unistd.h>
+/**
+ * read_textfile - reads a text file and prints the letters
+ * @filename: filename.
+ * @letters: numbers of letters printed.
+ *
+ * Return: numbers of letters printed. It fails, returns 0.
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+	int fd;
+	ssize_t nrd, nwr;
+	char *buf;
 
-ssize_t read_textfile(const char *filename, size_t letters);
-int create_file(const char *filename, char *text_content);
-int append_text_to_file(const char *filename, char *text_content);
+	if (!filename)
+		return (0);
 
-#endif
+	fd = open(filename, O_RDONLY);
+
+	if (fd == -1)
+		return (0);
+
+	buf = malloc(sizeof(char) * (letters));
+	if (!buf)
+		return (0);
+
+	nrd = read(fd, buf, letters);
+	nwr = write(STDOUT_FILENO, buf, nrd);
+
+	close(fd);
+
+	free(buf);
+
+	return (nwr);
+}
