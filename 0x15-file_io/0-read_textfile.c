@@ -7,7 +7,6 @@
  *
  *Return: number of leters printed and return 0 on failure.
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
